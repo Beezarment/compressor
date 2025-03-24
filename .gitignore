@@ -2,3 +2,4 @@
 Main
 image-compressor.cabal
 stack.yaml.lock
+imageCompressor
