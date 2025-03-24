@@ -1,0 +1,34 @@
+name: image-compressor
+version: 0.1.0.0
+
+dependencies:
+  - base
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Kmeans_helper
+    - Kmeans
+    - Parser
+  dependencies:
+    - base
+    - containers
+    - random
+    - parallel
+
+executables:
+  imageCompressor:
+    main: Main.hs
+    source-dirs: src
+    other-modules:
+      - Kmeans_helper
+      - Kmeans
+      - Parser
+    dependencies:
+      - base
+      - containers
+      - random
+      - parallel
+      - optparse-applicative
+    ghc-options:
+      - -Wall
